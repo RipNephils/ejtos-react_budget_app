@@ -37,25 +37,30 @@ const App = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown button
+                £ Pound
               </button>
               <ul
-                className="dropdown-menu"
+                className="dropdown-menu bg-success "
                 aria-labelledby="dropdownMenuButton1"
               >
                 <li>
                   <a className="dropdown-item" href="#">
-                    Action
+                    $ Dollar
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Another action
+                    £ Pound
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Something else here
+                    € Euro
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    ₹ Rupee
                   </a>
                 </li>
               </ul>
