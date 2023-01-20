@@ -7,6 +7,11 @@ import ExpenseTotal from "./components/ExpenseTotal";
 import ExpenseList from "./components/ExpenseList";
 import AllocationForm from "./components/AllocationForm";
 import RemainingBudget from "./components/Remaining";
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("cost").addEventListener("input", () => {
+    alert("XX");
+  });
+});
 
 const App = () => {
   return (
@@ -22,6 +27,39 @@ const App = () => {
           </div>
           <div className="col-sm">
             <ExpenseTotal />
+          </div>
+          <div className="col-sm mt-2">
+            <div className="dropdown">
+              <button
+                className="btn btn-success dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown button
+              </button>
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Another action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Something else here
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <h3 className="mt-3">Allocation</h3>
